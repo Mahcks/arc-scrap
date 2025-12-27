@@ -1,0 +1,172 @@
+{
+  "essentials": [
+    {
+      "name": "Metal Parts",
+      "value": 75,
+      "priority": "essential",
+      "bestDonors": [
+        {"item": "Frying Pan", "value": 640, "yield": 8},
+        {"item": "Candle Holder", "value": 640, "yield": 8},
+        {"item": "Ice Cream Scooper", "value": 640, "yield": 7},
+        {"item": "Garlic Press", "value": 1000, "yield": 12},
+        {"item": "ARC Performance Steel", "value": 1000, "yield": 7},
+        {"item": "Bicycle Pump", "value": 2000, "yield": 10}
+      ]
+    },
+    {
+      "name": "Fabric",
+      "value": 50,
+      "priority": "essential",
+      "bestDonors": [
+        {"item": "Durable Cloth", "value": 640, "yield": 1},
+        {"item": "Tattered Clothes", "value": 640, "yield": 11},
+        {"item": "Tattered ARC Lining", "value": 640, "yield": 12},
+        {"item": "Torn Blanket", "value": 640, "yield": 12},
+        {"item": "Ruined Parachute", "value": 640, "yield": 10},
+        {"item": "Spring Cushion", "value": 2000, "yield": 28},
+        {"item": "ARC Thermo Lining", "value": 1000, "yield": 16}
+      ]
+    },
+    {
+      "name": "Chemicals",
+      "value": 50,
+      "priority": "essential",
+      "bestDonors": [
+        {"item": "ARC Coolant", "value": 1000, "yield": 16},
+        {"item": "Cooling Coil", "value": 1000, "yield": 6}
+      ]
+    },
+    {
+      "name": "Plastic Parts",
+      "value": 60,
+      "priority": "essential",
+      "bestDonors": [
+        {"item": "ARC Synthetic Resin", "value": 1000, "yield": 14},
+        {"item": "Ruined Riot Shield", "value": 1000, "yield": 10}
+      ]
+    },
+    {
+      "name": "Rubber Parts",
+      "value": 50,
+      "priority": "essential",
+      "bestDonors": [
+        {"item": "ARC Flex Rubber", "value": 1000, "yield": 16},
+        {"item": "Rubber Pad", "value": 1000, "yield": 18}
+      ]
+    }
+  ],
+  "priorities": [
+    {
+      "name": "Mechanical Components",
+      "value": 640,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Turbo Pump", "value": 2000, "yield": 1},
+        {"item": "Rusted Gear", "value": 2000, "yield": 2},
+        {"item": "Sentinel Firing Core", "value": 3000, "yield": 2},
+        {"item": "Shredder Gyro", "value": 3000, "yield": 3}
+      ]
+    },
+    {
+      "name": "Electrical Components",
+      "value": 640,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Fried Motherboard", "value": 2000, "yield": 2},
+        {"item": "Rotary Encoder", "value": 3000, "yield": 2},
+        {"item": "Signal Amplifier", "value": 3000, "yield": 2},
+        {"item": "Hornet Driver", "value": 2000, "yield": 2}
+      ]
+    },
+    {
+      "name": "Battery",
+      "value": 250,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Portable TV", "value": 2000, "yield": 2},
+        {"item": "Geiger Counter", "value": 3500, "yield": 3},
+        {"item": "Power Bank", "value": 1000, "yield": 2},
+        {"item": "Broken Taser", "value": 1000, "yield": 2},
+        {"item": "Cracked Bioscanner", "value": 1000, "yield": 5},
+        {"item": "Broken Flashlight", "value": 1000, "yield": 2}
+      ]
+    },
+    {
+      "name": "Wires",
+      "value": 200,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Portable TV", "value": 2000, "yield": 6},
+        {"item": "Projector", "value": 1000, "yield": 2},
+        {"item": "Power Cable", "value": 1000, "yield": 4},
+        {"item": "Broken Handheld Radio", "value": 2000, "yield": 2}
+      ]
+    },
+    {
+      "name": "Steel Spring",
+      "value": 300,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Rusted Tools", "value": 1000, "yield": 1},
+        {"item": "Spring Cushion", "value": 2000, "yield": 2},
+        {"item": "Ruined Accordion", "value": 2000, "yield": 3},
+        {"item": "Cooling Coil", "value": 1000, "yield": 2}
+      ]
+    },
+    {
+      "name": "Magnet",
+      "value": 330,
+      "priority": "priority",
+      "bestDonors": [
+        {"item": "Microscope", "value": 3000, "yield": 3},
+        {"item": "Exodus Modules", "value": 2750, "yield": 2},
+        {"item": "Industrial Magnet", "value": 1000, "yield": 2},
+        {"item": "Ripped Safety Vest", "value": 1000, "yield": 1},
+        {"item": "Surge Shield Recharger", "value": 1200, "yield": 1}
+      ]
+    }
+  ],
+  "highTier": [
+    {
+      "name": "Advanced Electrical Components",
+      "value": 1750,
+      "priority": "high-tier",
+      "bestDonors": [
+        {"item": "Combat Mk. 2", "value": 2000, "yield": 1},
+        {"item": "Looting Mk. 2", "value": 2000, "yield": 1}
+      ]
+    },
+    {
+      "name": "Advanced Mechanical Components",
+      "value": 1750,
+      "priority": "high-tier",
+      "bestDonors": [
+        {"item": "Torrente I", "value": 1750, "yield": 1},
+        {"item": "Extended Mags I, II & III", "value": 640, "yield": 1}
+      ]
+    },
+    {
+      "name": "Mod Components",
+      "value": 3000,
+      "priority": "high-tier",
+      "bestDonors": []
+    }
+  ],
+  "other": [
+    {
+      "name": "Processor",
+      "value": 500,
+      "roi": -48
+    },
+    {
+      "name": "Voltage Converter",
+      "value": 500,
+      "roi": 50
+    },
+    {
+      "name": "Explosive Compound",
+      "value": 1000,
+      "roi": -46
+    }
+  ]
+}

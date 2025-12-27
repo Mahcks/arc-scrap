@@ -1,0 +1,169 @@
+{
+  "gearBench": {
+    "name": "Gear Bench",
+    "icon": "⚙️",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Power Cable", "value": 1000, "amount": 3, "roi": -20, "weight": 3},
+          {"item": "Hornet Driver", "value": 2000, "amount": 5, "roi": -16, "weight": 10},
+          {"item": "Electrical Components", "value": 640, "amount": 5, "roi": -48, "weight": 3}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Industrial Battery", "value": 1000, "amount": 3, "roi": -15, "weight": 3},
+          {"item": "Advanced Electrical Components", "value": 1750, "amount": 5, "roi": -52, "weight": 5},
+          {"item": "Bastion Cell", "value": 5000, "amount": 6, "roi": -22, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "gunsmith": {
+    "name": "Gunsmith",
+    "icon": "🔫",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Wasp Driver", "value": 1000, "amount": 8, "roi": -16, "weight": 10},
+          {"item": "Mechanical Components", "value": 640, "amount": 5, "roi": -49, "weight": 3},
+          {"item": "Rusted Tools", "value": 1000, "amount": 3, "roi": -10, "weight": 3}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Rusted Gear", "value": 2000, "amount": 3, "roi": -21, "weight": 3},
+          {"item": "Advanced Mechanical Components", "value": 1750, "amount": 5, "roi": -46, "weight": 5},
+          {"item": "Sentinel Firing Core", "value": 3000, "amount": 4, "roi": -23, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "medicalLab": {
+    "name": "Medical Lab",
+    "icon": "⚕️",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Durable Cloth", "value": 640, "amount": 5, "roi": -53, "weight": 10},
+          {"item": "Tick Pod", "value": 640, "amount": 8, "roi": -22, "weight": 5},
+          {"item": "Cracked Bioscanner", "value": 1000, "amount": 2, "roi": -10, "weight": 3}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Rusted Shut Medical Kit", "value": 2000, "amount": 3, "roi": 0, "weight": 1},
+          {"item": "Antiseptic", "value": 1000, "amount": 8, "roi": -50, "weight": 5},
+          {"item": "Surveyor Vault", "value": 2000, "amount": 5, "roi": -16, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "refiner": {
+    "name": "Refiner",
+    "icon": "🔥",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Fireball Burner", "value": 640, "amount": 8, "roi": -27, "weight": 5},
+          {"item": "ARC Motion Core", "value": 1000, "amount": 5, "roi": -60, "weight": 3},
+          {"item": "Toaster", "value": 1000, "amount": 3, "roi": -10, "weight": 3}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Motor", "value": 2000, "amount": 3, "roi": -25, "weight": 3},
+          {"item": "ARC Circuitry", "value": 1000, "amount": 10, "roi": -25, "weight": 5},
+          {"item": "Bombardier Cell", "value": 5000, "amount": 6, "roi": -25, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "utilityStation": {
+    "name": "Utility Station",
+    "icon": "🔧",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Snitch Scanner", "value": 2000, "amount": 6, "roi": -26, "weight": 3},
+          {"item": "Damaged Heat Sink", "value": 1000, "amount": 2, "roi": -15, "weight": 3},
+          {"item": "Electrical Components", "value": 640, "amount": 5, "roi": -48, "weight": 10}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Fried Motherboard", "value": 2000, "amount": 3, "roi": -21, "weight": 3},
+          {"item": "Advanced Electrical Components", "value": 1750, "amount": 5, "roi": -52, "weight": 5},
+          {"item": "Leaper Pulse Unit", "value": 5000, "amount": 4, "roi": -18, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "explosivesStation": {
+    "name": "Explosives Station",
+    "icon": "💣",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Synthesized Fuel", "value": 700, "amount": 3, "roi": -50, "weight": 5},
+          {"item": "Pop Trigger", "value": 640, "amount": 5, "roi": -27, "weight": 3},
+          {"item": "Crude Explosives", "value": 270, "amount": 5, "roi": -44, "weight": 10}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Laboratory Reagents", "value": 2000, "amount": 3, "roi": -20, "weight": 3},
+          {"item": "Explosive Compound", "value": 1000, "amount": 5, "roi": -46, "weight": 5},
+          {"item": "Rocketeer Driver", "value": 5000, "amount": 3, "roi": -18, "weight": 3}
+        ]
+      }
+    ]
+  },
+  "scrappy": {
+    "name": "Scrappy",
+    "icon": "🗑️",
+    "levels": [
+      {
+        "level": 2,
+        "upgrades": [
+          {"item": "Lemon", "value": 640, "amount": 3, "roi": -25, "weight": 10},
+          {"item": "Apricot", "value": 640, "amount": 3, "roi": -53, "weight": 10}
+        ]
+      },
+      {
+        "level": 3,
+        "upgrades": [
+          {"item": "Dog Collar", "value": 640, "amount": 1, "roi": -26, "weight": 3}
+        ]
+      },
+      {
+        "level": 4,
+        "upgrades": [
+          {"item": "Prickly Pear", "value": 640, "amount": 6, "roi": -53, "weight": 10},
+          {"item": "Olives", "value": 640, "amount": 6, "roi": -69, "weight": 10},
+          {"item": "Cat Bed", "value": 1000, "amount": 1, "weight": 3}
+        ]
+      },
+      {
+        "level": 5,
+        "upgrades": [
+          {"item": "Mushroom", "value": 1000, "amount": 12, "weight": 10},
+          {"item": "Apricot", "value": 640, "amount": 12, "roi": -53, "weight": 10},
+          {"item": "Very Comfortable Pillow", "value": 2000, "amount": 3, "weight": 3}
+        ]
+      }
+    ]
+  }
+}

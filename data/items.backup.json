@@ -1,0 +1,637 @@
+{
+  "safeToRecycle": [
+    {
+      "name": "Ion Sputter",
+      "value": 6000,
+      "roi": -21,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/ion_sputter.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Alarm Clock",
+      "value": 1000,
+      "roi": -14,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/alarm_clock.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Broken Guidance System",
+      "value": 2000,
+      "roi": 0,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/broken_guidance_system.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Broken Handheld Radio",
+      "value": 2000,
+      "roi": -5,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/broken_handheld_radio.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Coolant",
+      "value": 1000,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/coolant.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Moss",
+      "value": 500,
+      "roi": -40,
+      "category": "safe",
+      "weight": 10,
+      "image": "https://ardb.app/items/icons/moss.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Polluted Air Filter",
+      "value": 1000,
+      "roi": -10,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/polluted_air_filter.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Headphones",
+      "value": 1000,
+      "roi": -15,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/headphones.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Industrial Charger",
+      "value": 1000,
+      "roi": -12,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/industrial_charger.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Radio",
+      "value": 1000,
+      "roi": 0,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/radio.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Sample Cleaner",
+      "value": 3000,
+      "roi": -11,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/sample_cleaner.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Radio Relay",
+      "value": 3000,
+      "roi": -33,
+      "category": "safe",
+      "weight": 99,
+      "image": "https://ardb.app/items/icons/radio_relay.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Remote Control",
+      "value": 1000,
+      "roi": -8,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/remote_control.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Rope",
+      "value": 500,
+      "roi": -50,
+      "category": "safe",
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/rope.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Thermostat",
+      "value": 1000,
+      "roi": -15,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/thermostat.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Unusable Weapon",
+      "value": 2000,
+      "roi": -2.5,
+      "category": "safe",
+      "weight": 3
+    },
+    {
+      "name": "Burned ARC Circuitry",
+      "value": 640,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/burned_arc_circuitry.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Camera Lens",
+      "value": 640,
+      "roi": -25,
+      "category": "safe",
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/camera_lens.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Barricade Kit",
+      "value": 640,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/barricade_kit.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Zipline",
+      "value": 1000,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/zipline.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Crumpled Plastic Bottle",
+      "value": 270,
+      "roi": -11,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/crumpled_plastic_bottle.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Damaged Arc Powercell",
+      "value": 293,
+      "roi": -32,
+      "category": "safe",
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/damaged_arc_powercell.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Degraded ARC Rubber",
+      "value": 640,
+      "roi": -14,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/degraded_arc_rubber.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Deflated Football",
+      "value": 1000,
+      "roi": -10,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/deflated_football.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Flame Spray",
+      "value": 2000,
+      "roi": -50,
+      "category": "safe",
+      "weight": 1,
+      "image": "https://ardb.app/items/icons/flame_spray.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Household Cleaner",
+      "value": 640,
+      "roi": -14,
+      "category": "safe",
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/household_cleaner.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Number Plate",
+      "value": 270,
+      "roi": 181,
+      "category": "safe",
+      "weight": 3
+    },
+    {
+      "name": "Oil",
+      "value": 300,
+      "roi": -50,
+      "category": "safe",
+      "weight": 15,
+      "image": "https://ardb.app/items/icons/oil.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Ruined baton",
+      "value": 640,
+      "roi": -6,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/ruined_baton.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Spotter Relay",
+      "value": 2000,
+      "roi": -26,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/spotter_relay.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Rusty ARC Steel",
+      "value": 640,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/rusty_arc_steel.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Rusted Bolts",
+      "value": 640,
+      "roi": -6,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/rusted_bolts.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Ruined Handcuffs",
+      "value": 640,
+      "roi": -25,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/broken_handcuffs.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Binoculars",
+      "value": 640,
+      "roi": -47,
+      "category": "safe",
+      "weight": 1,
+      "image": "https://ardb.app/items/icons/binoculars.webp",
+      "rarity": "common"
+    },
+    {
+      "name": "Damaged Rocketeer Driver",
+      "value": 2000,
+      "roi": -70,
+      "category": "safe",
+      "weight": 50,
+      "image": "https://ardb.app/items/images/damaged_rocketeer_driver.webp",
+      "rarity": "common"
+    },
+    {
+      "name": "Damaged Tick Pod",
+      "value": 270,
+      "roi": -26,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/damaged_tick_pod.webp",
+      "rarity": "common"
+    },
+    {
+      "name": "Diving Goggles",
+      "value": 640,
+      "roi": -6,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/diving_goggles.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Expired Respirator",
+      "value": 640,
+      "roi": -6,
+      "category": "safe",
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/expired_respirator.webp",
+      "rarity": "rare"
+    }
+  ],
+  "expeditionProject": [
+    {
+      "name": "Metal Parts",
+      "value": 75,
+      "amount": 150,
+      "phase": 1,
+      "image": "https://ardb.app/items/icons/metal_parts.webp",
+      "rarity": "common"
+    },
+    {
+      "name": "Rubber Parts",
+      "value": 50,
+      "amount": 200,
+      "phase": 1,
+      "image": "https://ardb.app/items/icons/rubber_parts.webp",
+      "rarity": "common"
+    },
+    {
+      "name": "Arc Alloy",
+      "value": 200,
+      "amount": 80,
+      "phase": 1,
+      "roi": -25,
+      "image": "https://ardb.app/items/icons/arc_alloy.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Steel Spring",
+      "value": 300,
+      "amount": 15,
+      "phase": 1,
+      "roi": -25,
+      "image": "https://ardb.app/items/icons/steel_spring.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Durable Cloth",
+      "value": 640,
+      "amount": 35,
+      "phase": 1,
+      "roi": -53,
+      "image": "https://ardb.app/items/icons/durable_cloth.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Electrical Components",
+      "value": 640,
+      "amount": 30,
+      "phase": 1,
+      "roi": -48,
+      "image": "https://ardb.app/items/icons/electrical_components.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Wires",
+      "value": 200,
+      "amount": 30,
+      "phase": 1,
+      "roi": -50,
+      "image": "https://ardb.app/items/icons/wires.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Cooling Fan",
+      "value": 2000,
+      "amount": 5,
+      "phase": 2,
+      "roi": -18,
+      "image": "https://ardb.app/items/icons/cooling_fan_lq.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Light Bulb",
+      "value": 2000,
+      "amount": 5,
+      "phase": 2,
+      "image": "https://ardb.app/items/icons/light_bulb.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Sensors",
+      "value": 500,
+      "amount": 20,
+      "phase": 2,
+      "roi": -45,
+      "image": "https://ardb.app/items/icons/sensors.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Battery",
+      "value": 250,
+      "amount": 30,
+      "phase": 2,
+      "roi": -40,
+      "image": "https://ardb.app/items/icons/battery.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Exodus Modules",
+      "value": 2750,
+      "amount": 1,
+      "phase": 3,
+      "roi": -42,
+      "image": "https://ardb.app/items/images/exodus_modules.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Humidifier",
+      "value": 1000,
+      "amount": 5,
+      "phase": 3,
+      "image": "https://ardb.app/items/icons/humidifier.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Magnetic Accelerator",
+      "value": 5500,
+      "amount": 3,
+      "phase": 3,
+      "roi": -50,
+      "image": "https://ardb.app/items/icons/magnetic_accelerator.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Advanced Electrical Components",
+      "value": 1750,
+      "amount": 5,
+      "phase": 3,
+      "roi": -52,
+      "image": "https://ardb.app/items/icons/advanced_electrical_components.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Leaper Pulse Unit",
+      "value": 5000,
+      "amount": 3,
+      "phase": 3,
+      "roi": -18,
+      "image": "https://ardb.app/items/icons/leaper_pulse_unit.webp",
+      "rarity": "epic"
+    }
+  ],
+  "keepForQuests": [
+    {
+      "name": "Magnetron",
+      "value": 6000,
+      "amount": 1,
+      "roi": -3,
+      "weight": 3
+    },
+    {
+      "name": "Fertilizer",
+      "value": 1000,
+      "amount": 1,
+      "roi": -80,
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/fertilizer.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Water Pump",
+      "value": 1000,
+      "amount": 1,
+      "roi": -10,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/water_pump.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Power Rod",
+      "value": 5500,
+      "amount": 1,
+      "roi": -50,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/power_rod.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Snitch Scanner",
+      "value": 2000,
+      "amount": 2,
+      "roi": -26,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/snitch_scanner.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Wasp Driver",
+      "value": 1000,
+      "amount": 2,
+      "roi": -16,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/wasp_driver.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Hornet Driver",
+      "value": 2000,
+      "amount": 2,
+      "roi": -16,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/hornet_driver.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Surveyor Vault",
+      "value": 2000,
+      "amount": 1,
+      "roi": -16,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/rollbot_part.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Leaper Pulse Unit",
+      "value": 5000,
+      "amount": 1,
+      "roi": -18,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/leaper_pulse_unit.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Rocketeer Driver",
+      "value": 5000,
+      "amount": 1,
+      "roi": -18,
+      "weight": 3,
+      "image": "https://ardb.app/items/icons/rocketeer_driver.webp",
+      "rarity": "epic"
+    },
+    {
+      "name": "Syringe",
+      "value": 500,
+      "amount": 1,
+      "roi": -44,
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/syringe.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Antiseptic",
+      "value": 1000,
+      "amount": 2,
+      "roi": -25,
+      "weight": 5,
+      "image": "https://ardb.app/items/icons/antiseptic.webp",
+      "rarity": "rare"
+    },
+    {
+      "name": "Durable Cloth",
+      "value": 640,
+      "amount": 1,
+      "roi": -53,
+      "weight": 10,
+      "image": "https://ardb.app/items/icons/durable_cloth.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Great Mullein",
+      "value": 300,
+      "amount": 1,
+      "roi": -33,
+      "weight": 15,
+      "image": "https://ardb.app/items/icons/great_mullein.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "ARC Alloy",
+      "value": 200,
+      "amount": 3,
+      "roi": -25,
+      "weight": 15,
+      "image": "https://ardb.app/items/icons/arc_alloy.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Wires",
+      "value": 200,
+      "amount": 11,
+      "roi": -50,
+      "weight": 15,
+      "image": "https://ardb.app/items/icons/wires.webp",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Battery",
+      "value": 250,
+      "amount": 3,
+      "roi": -40,
+      "weight": 15,
+      "image": "https://ardb.app/items/icons/battery.webp",
+      "rarity": "uncommon"
+    }
+  ]
+}

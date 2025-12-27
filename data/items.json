@@ -1,0 +1,1266 @@
+[
+  {
+    "name": "Antiseptic",
+    "value": 1000,
+    "roi": 0,
+    "rarity": "rare",
+    "weight": 0.8,
+    "valuePerWeight": 1250,
+    "image": "https://ardb.app/static/items/icons/antiseptic.webp",
+    "category": "quests"
+  },
+  {
+    "name": "Broken Guidance System",
+    "value": 2000,
+    "roi": 0,
+    "rarity": "rare",
+    "weight": 3,
+    "valuePerWeight": 666.7,
+    "image": "https://ardb.app/static/items/icons/broken_guidance_system.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Processor",
+        "amount": 4,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Coolant",
+    "value": 0,
+    "roi": 0,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 0,
+    "image": "https://ardb.app/static/items/icons/coolant.webp",
+    "category": "safe"
+  },
+  {
+    "name": "Humidifier",
+    "value": 1000,
+    "roi": 0,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/humidifier.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Canister",
+        "amount": 2,
+        "value": 300
+      },
+      {
+        "name": "Wires",
+        "amount": 2,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Light Bulb",
+    "value": 2000,
+    "roi": 0,
+    "rarity": "uncommon",
+    "weight": 0.2,
+    "valuePerWeight": 10000,
+    "image": "https://ardb.app/static/items/icons/light_bulb.webp",
+    "category": "expedition"
+  },
+  {
+    "name": "Metal Parts",
+    "value": 75,
+    "roi": 0,
+    "rarity": "common",
+    "weight": 0.15,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/metal_parts.webp",
+    "category": "expedition"
+  },
+  {
+    "name": "Radio",
+    "value": 1000,
+    "roi": 0,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/radio.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Speaker Component",
+        "amount": 1,
+        "value": 500
+      },
+      {
+        "name": "Sensors",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Rubber Parts",
+    "value": 50,
+    "roi": 0,
+    "rarity": "common",
+    "weight": 0.15,
+    "valuePerWeight": 333.3,
+    "image": "https://ardb.app/static/items/icons/rubber_parts.webp",
+    "category": "expedition"
+  },
+  {
+    "name": "Unusable Weapon",
+    "value": 2000,
+    "roi": -2.5,
+    "rarity": "rare",
+    "weight": 3,
+    "valuePerWeight": 666.7,
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 4,
+        "value": 75
+      },
+      {
+        "name": "Simple Gun Parts",
+        "amount": 5,
+        "value": 330
+      }
+    ]
+  },
+  {
+    "name": "Magnetron",
+    "value": 6000,
+    "roi": -3.3,
+    "rarity": "epic",
+    "weight": 1.5,
+    "valuePerWeight": 4000,
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Magnetic Accelerator",
+        "amount": 1,
+        "value": 5500
+      },
+      {
+        "name": "Steel Spring",
+        "amount": 1,
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "Broken Handheld Radio",
+    "value": 2000,
+    "roi": -5,
+    "rarity": "rare",
+    "weight": 3,
+    "valuePerWeight": 666.7,
+    "image": "https://ardb.app/static/items/icons/broken_handheld_radio.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Sensors",
+        "amount": 3,
+        "value": 500
+      },
+      {
+        "name": "Wires",
+        "amount": 2,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Diving Goggles",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 320,
+    "image": "https://ardb.app/static/items/icons/diving_goggles.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 12,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Expired Respirator",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 320,
+    "image": "https://ardb.app/static/items/icons/expired_respirator.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 8,
+        "value": 50
+      },
+      {
+        "name": "Fabric",
+        "amount": 4,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Ruined baton",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/ruined_baton.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 6,
+        "value": 75
+      },
+      {
+        "name": "Rubber Parts",
+        "amount": 3,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Ruined Handcuffs",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/broken_handcuffs.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 8,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Rusted Bolts",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/rusted_bolts.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 8,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Rusty ARC Steel",
+    "value": 640,
+    "roi": -6.2,
+    "rarity": "uncommon",
+    "weight": 1,
+    "valuePerWeight": 640,
+    "image": "https://ardb.app/static/items/icons/rusty_arc_steel.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 8,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Remote Control",
+    "value": 1000,
+    "roi": -8,
+    "rarity": "rare",
+    "weight": 0.8,
+    "valuePerWeight": 1250,
+    "image": "https://ardb.app/static/items/icons/remote_control.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 7,
+        "value": 60
+      },
+      {
+        "name": "Sensors",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Deflated Football",
+    "value": 1000,
+    "roi": -10,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 1250,
+    "image": "https://ardb.app/static/items/icons/deflated_football.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 9,
+        "value": 50
+      },
+      {
+        "name": "Fabric",
+        "amount": 9,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Polluted Air Filter",
+    "value": 1000,
+    "roi": -10,
+    "rarity": "rare",
+    "weight": 0.8,
+    "valuePerWeight": 1250,
+    "image": "https://ardb.app/static/items/icons/polluted_air_filter.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Fabric",
+        "amount": 6,
+        "value": 50
+      },
+      {
+        "name": "Oil",
+        "amount": 2,
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "Water Pump",
+    "value": 1000,
+    "roi": -10,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/water_pump.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 4,
+        "value": 75
+      },
+      {
+        "name": "Oil",
+        "amount": 2,
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "Sample Cleaner",
+    "value": 3000,
+    "roi": -10.7,
+    "rarity": "rare",
+    "weight": 1.5,
+    "valuePerWeight": 2000,
+    "image": "https://ardb.app/static/items/icons/sample_cleaner.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Electrical Components",
+        "amount": 2,
+        "value": 640
+      },
+      {
+        "name": "Assorted Seeds",
+        "amount": 14,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "Crumpled Plastic Bottle",
+    "value": 270,
+    "roi": -11.1,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 337.5,
+    "image": "https://ardb.app/static/items/icons/crumpled_plastic_bottle.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 4,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "Industrial Charger",
+    "value": 1000,
+    "roi": -12.5,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/industrial_charger.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 5,
+        "value": 75
+      },
+      {
+        "name": "Voltage Converter",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Alarm Clock",
+    "value": 1000,
+    "roi": -14,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/alarm_clock.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 6,
+        "value": 60
+      },
+      {
+        "name": "Processor",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Degraded ARC Rubber",
+    "value": 640,
+    "roi": -14.1,
+    "rarity": "uncommon",
+    "weight": 1,
+    "valuePerWeight": 640,
+    "image": "https://ardb.app/static/items/icons/degraded_arc_rubber.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 11,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Household Cleaner",
+    "value": 640,
+    "roi": -14.1,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/household_cleaner.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Chemicals",
+        "amount": 11,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Headphones",
+    "value": 1000,
+    "roi": -15,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/headphones.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 7,
+        "value": 50
+      },
+      {
+        "name": "Speaker Component",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Thermostat",
+    "value": 1000,
+    "roi": -15,
+    "rarity": "rare",
+    "weight": 2,
+    "valuePerWeight": 500,
+    "image": "https://ardb.app/static/items/icons/thermostat.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 7,
+        "value": 50
+      },
+      {
+        "name": "Sensors",
+        "amount": 1,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Hornet Driver",
+    "value": 2000,
+    "roi": -16,
+    "rarity": "rare",
+    "weight": 0.75,
+    "valuePerWeight": 2666.7,
+    "image": "https://ardb.app/static/items/icons/hornet_driver.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 2,
+        "value": 200
+      },
+      {
+        "name": "Electrical Components",
+        "amount": 2,
+        "value": 640
+      }
+    ]
+  },
+  {
+    "name": "Surveyor Vault",
+    "value": 2000,
+    "roi": -16,
+    "rarity": "rare",
+    "weight": 1,
+    "valuePerWeight": 2000,
+    "image": "https://ardb.app/static/items/icons/rollbot_part.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Mechanical Components",
+        "amount": 2,
+        "value": 640
+      },
+      {
+        "name": "ARC Alloy",
+        "amount": 2,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Wasp Driver",
+    "value": 1000,
+    "roi": -16,
+    "rarity": "rare",
+    "weight": 0.6,
+    "valuePerWeight": 1666.7,
+    "image": "https://ardb.app/static/items/icons/wasp_driver.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 1,
+        "value": 200
+      },
+      {
+        "name": "Electrical Components",
+        "amount": 1,
+        "value": 640
+      }
+    ]
+  },
+  {
+    "name": "Number Plate",
+    "value": 270,
+    "roi": -16.7,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 337.5,
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 3,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Cooling Fan",
+    "value": 2000,
+    "roi": -18,
+    "rarity": "rare",
+    "weight": 3,
+    "valuePerWeight": 666.7,
+    "image": "https://ardb.app/static/items/icons/cooling_fan_lq.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 14,
+        "value": 60
+      },
+      {
+        "name": "Wires",
+        "amount": 4,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Leaper Pulse Unit",
+    "value": 5000,
+    "roi": -18,
+    "rarity": "epic",
+    "weight": 1,
+    "valuePerWeight": 5000,
+    "image": "https://ardb.app/static/items/icons/leaper_pulse_unit.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 3,
+        "value": 200
+      },
+      {
+        "name": "Advanced Mechanical Components",
+        "amount": 2,
+        "value": 1750
+      }
+    ]
+  },
+  {
+    "name": "Rocketeer Driver",
+    "value": 5000,
+    "roi": -18,
+    "rarity": "epic",
+    "weight": 1,
+    "valuePerWeight": 5000,
+    "image": "https://ardb.app/static/items/icons/rocketeer_driver.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 3,
+        "value": 200
+      },
+      {
+        "name": "Advanced Electrical Components",
+        "amount": 2,
+        "value": 1750
+      }
+    ]
+  },
+  {
+    "name": "Ion Sputter",
+    "value": 6000,
+    "roi": -20.8,
+    "rarity": "epic",
+    "weight": 1.5,
+    "valuePerWeight": 4000,
+    "image": "https://ardb.app/static/items/icons/ion_sputter.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Voltage Converter",
+        "amount": 4,
+        "value": 500
+      },
+      {
+        "name": "Exodus Modules",
+        "amount": 1,
+        "value": 2750
+      }
+    ]
+  },
+  {
+    "name": "ARC Alloy",
+    "value": 200,
+    "roi": -25,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/arc_alloy.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 2,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Camera Lens",
+    "value": 640,
+    "roi": -25,
+    "rarity": "uncommon",
+    "weight": 0.8,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/camera_lens.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 8,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "Steel Spring",
+    "value": 300,
+    "roi": -25,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 1200,
+    "image": "https://ardb.app/static/items/icons/steel_spring.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 3,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Damaged Tick Pod",
+    "value": 270,
+    "roi": -25.9,
+    "rarity": "common",
+    "weight": 0.25,
+    "valuePerWeight": 1080,
+    "image": "https://ardb.app/static/items/icons/damaged_tick_pod.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 1,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Snitch Scanner",
+    "value": 2000,
+    "roi": -26,
+    "rarity": "uncommon",
+    "weight": 0.75,
+    "valuePerWeight": 2666.7,
+    "image": "https://ardb.app/static/items/icons/snitch_scanner.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 1,
+        "value": 200
+      },
+      {
+        "name": "Electrical Components",
+        "amount": 2,
+        "value": 640
+      }
+    ]
+  },
+  {
+    "name": "Spotter Relay",
+    "value": 2000,
+    "roi": -26,
+    "rarity": "uncommon",
+    "weight": 1,
+    "valuePerWeight": 2000,
+    "image": "https://ardb.app/static/items/icons/spotter_relay.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Electrical Components",
+        "amount": 2,
+        "value": 640
+      },
+      {
+        "name": "ARC Alloy",
+        "amount": 1,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Damaged Arc Powercell",
+    "value": 293,
+    "roi": -31.7,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 1172,
+    "image": "https://ardb.app/static/items/icons/damaged_arc_powercell.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 1,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Great Mullein",
+    "value": 300,
+    "roi": -33.3,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 1200,
+    "image": "https://ardb.app/static/items/icons/great_mullein.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Assorted Seeds",
+        "amount": 2,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "Radio Relay",
+    "value": 3000,
+    "roi": -33.3,
+    "rarity": "rare",
+    "weight": 1.5,
+    "valuePerWeight": 2000,
+    "image": "https://ardb.app/static/items/icons/radio_relay.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Speaker Component",
+        "amount": 2,
+        "value": 500
+      },
+      {
+        "name": "Sensors",
+        "amount": 2,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Burned ARC Circuitry",
+    "value": 640,
+    "roi": -37.5,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 2560,
+    "image": "https://ardb.app/static/items/icons/burned_arc_circuitry.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 2,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Battery",
+    "value": 250,
+    "roi": -40,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 1000,
+    "image": "https://ardb.app/static/items/icons/battery.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 2,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Moss",
+    "value": 500,
+    "roi": -40,
+    "rarity": "rare",
+    "weight": 0.3,
+    "valuePerWeight": 1666.7,
+    "image": "https://ardb.app/static/items/icons/moss.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Assorted Seeds",
+        "amount": 3,
+        "value": 100
+      }
+    ]
+  },
+  {
+    "name": "Exodus Modules",
+    "value": 2750,
+    "roi": -41.8,
+    "rarity": "epic",
+    "weight": 1,
+    "valuePerWeight": 2750,
+    "image": "https://ardb.app/static/items/images/exodus_modules.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Magnet",
+        "amount": 2,
+        "value": 300
+      },
+      {
+        "name": "Processor",
+        "amount": 2,
+        "value": 500
+      }
+    ]
+  },
+  {
+    "name": "Zipline",
+    "value": 1000,
+    "roi": -42.5,
+    "rarity": "rare",
+    "weight": 0.4,
+    "valuePerWeight": 2500,
+    "image": "https://ardb.app/static/items/icons/zipline.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rope",
+        "amount": 1,
+        "value": 500
+      },
+      {
+        "name": "Metal Parts",
+        "amount": 1,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Syringe",
+    "value": 500,
+    "roi": -44,
+    "rarity": "rare",
+    "weight": 0.3,
+    "valuePerWeight": 1666.7,
+    "image": "https://ardb.app/static/items/icons/syringe.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 3,
+        "value": 60
+      },
+      {
+        "name": "Chemicals",
+        "amount": 2,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Sensors",
+    "value": 500,
+    "roi": -45,
+    "rarity": "rare",
+    "weight": 0.3,
+    "valuePerWeight": 1666.7,
+    "image": "https://ardb.app/static/items/icons/sensors.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Wires",
+        "amount": 1,
+        "value": 200
+      },
+      {
+        "name": "Metal Parts",
+        "amount": 1,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Binoculars",
+    "value": 640,
+    "roi": -46.9,
+    "rarity": "common",
+    "weight": 0.5,
+    "valuePerWeight": 1280,
+    "image": "https://ardb.app/static/items/icons/binoculars.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 2,
+        "value": 50
+      },
+      {
+        "name": "Plastic Parts",
+        "amount": 4,
+        "value": 60
+      }
+    ]
+  },
+  {
+    "name": "Electrical Components",
+    "value": 640,
+    "roi": -48.4,
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "valuePerWeight": 1280,
+    "image": "https://ardb.app/static/items/icons/electrical_components.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Plastic Parts",
+        "amount": 3,
+        "value": 60
+      },
+      {
+        "name": "Rubber Parts",
+        "amount": 3,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Magnetic Accelerator",
+    "value": 5500,
+    "roi": -50,
+    "rarity": "epic",
+    "weight": 1,
+    "valuePerWeight": 5500,
+    "image": "https://ardb.app/static/items/icons/magnetic_accelerator.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Advanced Mechanical Components",
+        "amount": 1,
+        "value": 1750
+      },
+      {
+        "name": "ARC Motion Core",
+        "amount": 1,
+        "value": 1000
+      }
+    ]
+  },
+  {
+    "name": "Oil",
+    "value": 300,
+    "roi": -50,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 1200,
+    "image": "https://ardb.app/static/items/icons/oil.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Chemicals",
+        "amount": 3,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Power Rod",
+    "value": 5500,
+    "roi": -50,
+    "rarity": "epic",
+    "weight": 2,
+    "valuePerWeight": 2750,
+    "image": "https://ardb.app/static/items/icons/power_rod.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Advanced Electrical Components",
+        "amount": 1,
+        "value": 1750
+      },
+      {
+        "name": "ARC Circuitry",
+        "amount": 1,
+        "value": 1000
+      }
+    ]
+  },
+  {
+    "name": "Rope",
+    "value": 500,
+    "roi": -50,
+    "rarity": "rare",
+    "weight": 0.3,
+    "valuePerWeight": 1666.7,
+    "image": "https://ardb.app/static/items/icons/rope.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Fabric",
+        "amount": 5,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Wires",
+    "value": 200,
+    "roi": -50,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 800,
+    "image": "https://ardb.app/static/items/icons/wires.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Rubber Parts",
+        "amount": 2,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Advanced Electrical Components",
+    "value": 1750,
+    "roi": -52,
+    "rarity": "rare",
+    "weight": 3,
+    "valuePerWeight": 583.3,
+    "image": "https://ardb.app/static/items/icons/advanced_electrical_components.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Electrical Components",
+        "amount": 1,
+        "value": 640
+      },
+      {
+        "name": "Wires",
+        "amount": 1,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Flame Spray",
+    "value": 2000,
+    "roi": -53,
+    "rarity": "uncommon",
+    "weight": 3,
+    "valuePerWeight": 666.7,
+    "image": "https://ardb.app/static/items/icons/flame_spray.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Fireball Burner",
+        "amount": 1,
+        "value": 640
+      },
+      {
+        "name": "Canister",
+        "amount": 1,
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "Barricade Kit",
+    "value": 640,
+    "roi": -53.1,
+    "rarity": "uncommon",
+    "weight": 0.4,
+    "valuePerWeight": 1600,
+    "image": "https://ardb.app/static/items/icons/barricade_kit.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "Metal Parts",
+        "amount": 4,
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "Durable Cloth",
+    "value": 640,
+    "roi": -53.1,
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "valuePerWeight": 2560,
+    "image": "https://ardb.app/static/items/icons/durable_cloth.webp",
+    "category": "expedition",
+    "breaksInto": [
+      {
+        "name": "Fabric",
+        "amount": 6,
+        "value": 50
+      }
+    ]
+  },
+  {
+    "name": "Damaged Rocketeer Driver",
+    "value": 2000,
+    "roi": -70,
+    "rarity": "common",
+    "weight": 0.25,
+    "valuePerWeight": 8000,
+    "image": "https://ardb.app/static/items/images/damaged_rocketeer_driver.webp",
+    "category": "safe",
+    "breaksInto": [
+      {
+        "name": "ARC Alloy",
+        "amount": 3,
+        "value": 200
+      }
+    ]
+  },
+  {
+    "name": "Fertilizer",
+    "value": 1000,
+    "roi": -80,
+    "rarity": "uncommon",
+    "weight": 0.4,
+    "valuePerWeight": 2500,
+    "image": "https://ardb.app/static/items/icons/fertilizer.webp",
+    "category": "quests",
+    "breaksInto": [
+      {
+        "name": "Assorted Seeds",
+        "amount": 2,
+        "value": 100
+      }
+    ]
+  }
+]
