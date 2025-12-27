@@ -149,10 +149,10 @@ export default function ItemCard({ item, showCategory = false }: ItemCardProps) 
                   {recommendation.action}
                 </div>
                 <div className="text-xs text-gray-500">
-                  {item.roi > 0 && 'Recycling gives more value'}
-                  {item.roi === 0 && 'No recycling data'}
-                  {item.roi < 0 && item.roi >= -20 && 'Slight loss if recycled'}
-                  {item.roi < -20 && 'Better to sell directly'}
+                  {(item.roi ?? 0) > 0 && 'Recycling gives more value'}
+                  {(item.roi ?? 0) === 0 && 'No recycling data'}
+                  {(item.roi ?? 0) < 0 && (item.roi ?? 0) >= -20 && 'Slight loss if recycled'}
+                  {(item.roi ?? 0) < -20 && 'Better to sell directly'}
                 </div>
               </div>
             </div>

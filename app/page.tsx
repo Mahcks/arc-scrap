@@ -9,8 +9,15 @@ import StatsCard from '@/components/StatsCard';
 import { useItemsData } from '@/hooks/useItemsData';
 import { getCacheAgeString } from '@/lib/cache';
 
-import componentsData from '@/data/components.json';
+import componentsDataRaw from '@/data/components.json';
 import workshopsData from '@/data/workshops.json';
+import type { Component } from '@/lib/types';
+
+const componentsData = componentsDataRaw as {
+  essentials: Component[];
+  priorities: Component[];
+  highTier: Component[];
+};
 
 type ViewMode = 'items' | 'components' | 'workshops';
 type ItemFilter = 'all' | 'safe' | 'quests' | 'expedition';
