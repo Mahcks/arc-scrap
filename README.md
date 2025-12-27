@@ -79,7 +79,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 **Recycling ROI Data:**
 All recycling calculations from the [V3 Looting and Recycling Cheat Sheet](https://ko-fi.com/prodeed) by u/pRoDeeD.
-Last synced: November 30, 2025
+Last synced: December 26, 2025
 
 **Item Database:**
 Item images and rarity data available from the [ARC Raiders Database API](https://ardb.app)
