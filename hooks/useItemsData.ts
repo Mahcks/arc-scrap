@@ -32,7 +32,7 @@ export function useItemsData(): UseItemsDataReturn {
 
       // Dynamically import the data file
       const itemsModule = await import('@/data/items.json');
-      const freshItems = itemsModule.default;
+      const freshItems = itemsModule.default as Item[];
 
       // Update state and cache
       setItems(freshItems);
