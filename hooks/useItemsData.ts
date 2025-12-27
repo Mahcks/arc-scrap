@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Item } from '@/lib/types';
+import { Item, Rarity } from '@/lib/types';
 import { getCachedData, setCachedData, isCacheFresh, getCacheMetadata } from '@/lib/cache';
 
 interface UseItemsDataReturn {
@@ -30,7 +30,7 @@ export function useItemsData(): UseItemsDataReturn {
       if (!silent) setLoading(true);
       setError(null);
 
-      // Dynamically import the data file
+      // Load data from local JSON (has ROI, categories, component values)
       const itemsModule = await import('@/data/items.json');
       const freshItems = itemsModule.default as Item[];
 

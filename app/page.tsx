@@ -6,7 +6,7 @@ import FilterTabs from "@/components/FilterTabs";
 import ItemCard from "@/components/ItemCard";
 import ComponentFinder from "@/components/ComponentFinder";
 import ShoppingList from "@/components/ShoppingList";
-import { useItemsData } from "@/hooks/useItemsData";
+import { useApiItemsData } from "@/hooks/useApiItemsData";
 import { getCacheAgeString } from "@/lib/cache";
 import {
   CoinIcon,
@@ -43,8 +43,8 @@ export default function Home() {
   const [itemFilter, setItemFilter] = useState<ItemFilter>("all");
   const [sortBy, setSortBy] = useState<SortOption>("roi");
 
-  // Fetch items with caching
-  const { items: allItems, loading, error, isStale, refetch } = useItemsData();
+  // Fetch items from API with ROI calculations and categories
+  const { items: allItems, loading, error } = useApiItemsData();
 
   // Filter and sort items based on search, category, and sort option
   const filteredItems = useMemo(() => {
@@ -179,7 +179,7 @@ export default function Home() {
           <p className="text-xl text-red-400 mb-4">Failed to load data</p>
           <p className="text-gray-400 mb-6">{error}</p>
           <button
-            onClick={refetch}
+            onClick={() => window.location.reload()}
             className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
           >
             Retry
@@ -191,25 +191,6 @@ export default function Home() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Cache indicator */}
-      {isStale && (
-        <div className="mb-4 card bg-yellow-500/10 border-yellow-500/30">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="text-yellow-400">🔄</span>
-              <span className="text-sm text-gray-300">
-                Updating data in background... (cached data shown)
-              </span>
-            </div>
-            <button
-              onClick={refetch}
-              className="px-3 py-1 text-xs bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 rounded transition-colors"
-            >
-              Refresh now
-            </button>
-          </div>
-        </div>
-      )}
 
       {/* Hero Section */}
       <div className="text-center mb-12">

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { Item } from '@/lib/types';
+import { COMPONENT_VALUES, formatComponentName } from '@/lib/recycling';
 
 interface DonorItem {
   itemName: string;
@@ -30,31 +31,35 @@ export default function ComponentFinder({ items }: ComponentFinderProps) {
   const [selectedComponent, setSelectedComponent] = useState<string | null>(null);
   const [sortMode, setSortMode] = useState<SortMode>('alphabetical');
 
-  // Build reverse lookup index
+  // Build reverse lookup index from recyclesInto data
   const componentIndex = useMemo(() => {
     const index = new Map<string, ComponentSource>();
 
     items.forEach(item => {
-      if (!item.breaksInto) return;
+      if (!item.recyclesInto) return;
 
-      item.breaksInto.forEach(component => {
-        const existing = index.get(component.name);
+      // Convert recyclesInto object to array format
+      Object.entries(item.recyclesInto).forEach(([componentName, amount]) => {
+        const existing = index.get(componentName);
 
         const donor: DonorItem = {
           itemName: item.name,
-          amount: component.amount,
+          amount: amount,
           itemValue: item.value,
-          image: item.image,
+          image: item.image || item.imageFilename,
           rarity: item.rarity,
-          efficiency: component.amount / item.value,
+          efficiency: amount / item.value,
         };
 
         if (existing) {
           existing.donors.push(donor);
         } else {
-          index.set(component.name, {
-            componentName: component.name,
-            componentValue: component.value,
+          // Get component value from COMPONENT_VALUES lookup
+          const componentValue = COMPONENT_VALUES[componentName] || 0;
+
+          index.set(componentName, {
+            componentName: componentName,
+            componentValue: componentValue,
             donors: [donor],
             totalSources: 1,
           });
@@ -185,7 +190,7 @@ export default function ComponentFinder({ items }: ComponentFinderProps) {
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex-1 min-w-0">
                     <div className="font-medium truncate text-xs">
-                      {component.componentName}
+                      {formatComponentName(component.componentName)}
                     </div>
                     <div className="text-[10px] text-[var(--text-muted)] mt-0.5">
                       {component.totalSources} source{component.totalSources !== 1 ? 's' : ''}
@@ -229,7 +234,7 @@ export default function ComponentFinder({ items }: ComponentFinderProps) {
               <div className="flex items-start justify-between">
                 <div>
                   <h2 className="text-xl font-bold text-[var(--text-primary)]">
-                    {selectedComponentData.componentName}
+                    {formatComponentName(selectedComponentData.componentName)}
                   </h2>
                   <div className="flex items-center gap-1.5 mt-1">
                     <svg className="fill-amber-400 w-3.5 h-3.5" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +342,7 @@ export default function ComponentFinder({ items }: ComponentFinderProps) {
                 <div className="flex-1 space-y-1">
                   <div className="text-xs font-semibold text-blue-400">Efficiency Explained</div>
                   <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed">
-                    Higher efficiency = more {selectedComponentData.componentName} per coin spent.
+                    Higher efficiency = more {formatComponentName(selectedComponentData.componentName)} per coin spent.
                     Top items give you the best value when recycling for this specific component.
                   </p>
                 </div>

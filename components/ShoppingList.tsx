@@ -3,6 +3,8 @@
 import { useMemo, useState } from 'react';
 import { Item } from '@/lib/types';
 import { CloseIcon, CheckIcon } from './icons';
+import { useApiItemsData } from '@/hooks/useApiItemsData';
+import { formatComponentName } from '@/lib/recycling';
 
 interface ComponentRequirement {
   componentName: string;
@@ -20,16 +22,22 @@ interface ComponentRequirement {
 }
 
 interface ShoppingListProps {
-  items: Item[];
+  items: Item[]; // Items from cheat sheet for component donor lookup
 }
 
-export default function ShoppingList({ items: allItems }: ShoppingListProps) {
+export default function ShoppingList({ items: cheatSheetItems }: ShoppingListProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItems, setSelectedItems] = useState<Set<string>>(new Set());
 
-  // Filter items that have components (craftable items)
+  // Fetch ALL items from API for craftable items
+  const { items: apiItems, loading: apiLoading, error: apiError } = useApiItemsData();
+
+  // Use API items for everything (has both recyclable and craftable)
+  const allItems = apiItems.length > 0 ? apiItems : cheatSheetItems;
+
+  // Filter items that have recipes (craftable items)
   const craftableItems = useMemo(() => {
-    return allItems.filter(item => item.breaksInto && item.breaksInto.length > 0);
+    return allItems.filter(item => item.recipe && Object.keys(item.recipe).length > 0);
   }, [allItems]);
 
   // Filter craftable items based on search
@@ -42,7 +50,7 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
     );
   }, [craftableItems, searchQuery]);
 
-  // Build component index (component name -> items that produce it)
+  // Build component index (component name -> items that produce it when recycled)
   const componentIndex = useMemo(() => {
     const index = new Map<string, Array<{
       itemName: string;
@@ -54,21 +62,22 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
     }>>();
 
     allItems.forEach(item => {
-      if (!item.breaksInto) return;
+      if (!item.recyclesInto) return;
 
-      item.breaksInto.forEach(component => {
-        const existing = index.get(component.name) || [];
+      // Convert recyclesInto object to array format
+      Object.entries(item.recyclesInto).forEach(([componentName, amount]) => {
+        const existing = index.get(componentName) || [];
 
         existing.push({
           itemName: item.name,
           itemValue: item.value,
-          amountPerRecycle: component.amount,
-          image: item.image,
+          amountPerRecycle: amount,
+          image: item.image || item.imageFilename,
           rarity: item.rarity,
-          efficiency: component.amount / item.value,
+          efficiency: amount / item.value,
         });
 
-        index.set(component.name, existing);
+        index.set(componentName, existing);
       });
     });
 
@@ -80,29 +89,30 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
     return index;
   }, [allItems]);
 
-  // Calculate aggregated component requirements
+  // Calculate aggregated component requirements from recipes
   const componentRequirements = useMemo(() => {
     if (selectedItems.size === 0) return [];
 
     const requirements = new Map<string, ComponentRequirement>();
 
-    // Aggregate all components needed
+    // Aggregate all components needed from recipes
     selectedItems.forEach(itemName => {
       const item = allItems.find(i => i.name === itemName);
-      if (!item?.breaksInto) return;
+      if (!item?.recipe) return;
 
-      item.breaksInto.forEach(component => {
-        const existing = requirements.get(component.name);
+      // Convert recipe object to array format
+      Object.entries(item.recipe).forEach(([componentName, amount]) => {
+        const existing = requirements.get(componentName);
 
         if (existing) {
-          existing.totalNeeded += component.amount;
+          existing.totalNeeded += amount;
         } else {
-          const donors = componentIndex.get(component.name) || [];
+          const donors = componentIndex.get(componentName) || [];
 
-          requirements.set(component.name, {
-            componentName: component.name,
-            componentValue: component.value,
-            totalNeeded: component.amount,
+          requirements.set(componentName, {
+            componentName: componentName,
+            componentValue: 0, // Will need to fetch component values later
+            totalNeeded: amount,
             bestDonors: donors.slice(0, 3).map(donor => ({
               ...donor,
               recyclesNeeded: 0, // Will calculate below
@@ -150,6 +160,40 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
       default: return 'border-[var(--border)]';
     }
   };
+
+  // Show loading state while fetching API data
+  if (apiLoading) {
+    return (
+      <div className="card h-[400px] flex items-center justify-center">
+        <div className="text-center space-y-2">
+          <div className="text-4xl mb-2">⏳</div>
+          <h3 className="text-base font-semibold text-[var(--text-primary)]">
+            Loading Craftable Items...
+          </h3>
+          <p className="text-xs text-[var(--text-muted)]">
+            Fetching data from API
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show error if API failed
+  if (apiError) {
+    return (
+      <div className="card h-[400px] flex items-center justify-center">
+        <div className="text-center space-y-2 max-w-sm">
+          <div className="text-4xl mb-2">⚠️</div>
+          <h3 className="text-base font-semibold text-[var(--text-primary)]">
+            Failed to Load Crafting Data
+          </h3>
+          <p className="text-xs text-[var(--text-muted)]">
+            {apiError}
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-4">
@@ -222,10 +266,10 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
                     </div>
 
                     {/* Image */}
-                    {item.image && (
+                    {(item.image || item.imageFilename) && (
                       <div className={`w-10 h-10 rounded bg-[var(--background)] flex-shrink-0 overflow-hidden border ${getRarityBorder(item.rarity)}`}>
                         <img
-                          src={item.image}
+                          src={item.image || item.imageFilename}
                           alt={item.name}
                           className="w-full h-full object-cover"
                         />
@@ -238,7 +282,7 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
                         {item.name}
                       </div>
                       <div className="text-[10px] text-[var(--text-muted)]">
-                        {item.breaksInto?.length || 0} component{item.breaksInto?.length !== 1 ? 's' : ''}
+                        {item.recipe ? Object.keys(item.recipe).length : 0} component{(item.recipe && Object.keys(item.recipe).length !== 1) ? 's' : ''} required
                       </div>
                     </div>
                   </div>
@@ -293,7 +337,7 @@ export default function ShoppingList({ items: allItems }: ShoppingListProps) {
                 <div className="mb-3 pb-3 border-b border-[var(--border)]">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-semibold text-[var(--text-primary)]">
-                      {req.componentName}
+                      {formatComponentName(req.componentName)}
                     </h3>
                     <div className="flex items-center gap-1.5">
                       <span className="text-lg font-bold text-emerald-400">

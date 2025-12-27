@@ -1,5 +1,6 @@
 import { Item, formatROI } from '@/lib/types';
-import { CoinIcon, WeightIcon, ChartIcon, RecycleIcon, StoreIcon, AlertIcon } from './icons';
+import { CoinIcon, WeightIcon, ChartIcon, RecycleIcon, StoreIcon, AlertIcon, HammerIcon } from './icons';
+import { formatComponentName } from '@/lib/recycling';
 
 interface ItemCardProps {
   item: Item;
@@ -50,10 +51,10 @@ export default function ItemCard({ item, showCategory = false }: ItemCardProps) 
     <div className="card card-hover group">
       <div className="flex gap-4">
         {/* Item Image with Rarity Glow */}
-        {item.image && (
+        {(item.image || item.imageFilename) && (
           <div className={`w-16 h-16 rounded-lg bg-[var(--background)] flex-shrink-0 overflow-hidden border ${getRarityBorder(item.rarity)} ${getRarityGlow(item.rarity)} transition-shadow`}>
             <img
-              src={item.image}
+              src={item.image || item.imageFilename}
               alt={item.name}
               className="w-full h-full object-cover"
             />
@@ -96,10 +97,10 @@ export default function ItemCard({ item, showCategory = false }: ItemCardProps) 
             </div>
 
             {/* Weight */}
-            {item.weight && (
+            {(item.weight || item.weightKg) && (
               <div className="flex items-center gap-1.5">
                 <WeightIcon className="text-[var(--text-muted)] w-3.5 h-3.5 flex-shrink-0" />
-                <span className="text-[var(--text-secondary)]">{item.weight} kg</span>
+                <span className="text-[var(--text-secondary)]">{item.weight || item.weightKg} kg</span>
               </div>
             )}
 
@@ -119,6 +120,45 @@ export default function ItemCard({ item, showCategory = false }: ItemCardProps) 
               {roi === 0 && 'No recycling data'}
               {roi < 0 && roi >= -20 && <><AlertIcon className="text-yellow-400 w-3 h-3 flex-shrink-0" /> Minor loss if recycled</>}
               {hasNegativeROI && <><StoreIcon className="text-red-400 w-3 h-3 flex-shrink-0" /> Sell instead</>}
+            </div>
+          )}
+
+          {/* Recycling Info */}
+          {item.recyclesInto && Object.keys(item.recyclesInto).length > 0 && (
+            <div className="mt-2 pt-2 border-t border-[var(--border)]">
+              <div className="flex items-center gap-1.5 mb-1.5">
+                <RecycleIcon className="text-green-400 w-3 h-3 flex-shrink-0" />
+                <span className="text-[10px] font-semibold text-green-400">Recycles Into</span>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {Object.entries(item.recyclesInto).map(([component, amount]) => (
+                  <span key={component} className="text-[9px] px-1.5 py-0.5 bg-[var(--surface)] border border-[var(--border)] rounded text-[var(--text-secondary)]">
+                    {amount}x {formatComponentName(component)}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Crafting Info */}
+          {item.recipe && Object.keys(item.recipe).length > 0 && (
+            <div className="mt-2 pt-2 border-t border-[var(--border)]">
+              <div className="flex items-center gap-1.5 mb-1.5">
+                <HammerIcon className="text-blue-400 w-3 h-3 flex-shrink-0" />
+                <span className="text-[10px] font-semibold text-blue-400">Craftable</span>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {Object.entries(item.recipe).map(([component, amount]) => (
+                  <span key={component} className="text-[9px] px-1.5 py-0.5 bg-[var(--surface)] border border-[var(--border)] rounded text-[var(--text-secondary)]">
+                    {amount}x {formatComponentName(component)}
+                  </span>
+                ))}
+              </div>
+              {item.craftBench && (
+                <div className="text-[9px] text-[var(--text-muted)] mt-1">
+                  at {(Array.isArray(item.craftBench) ? item.craftBench : [item.craftBench]).map(bench => bench.replace(/_/g, ' ')).join(', ')}
+                </div>
+              )}
             </div>
           )}
         </div>

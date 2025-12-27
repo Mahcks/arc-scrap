@@ -6,16 +6,21 @@ export interface Item {
   roi?: number;
   category?: string;
   weight?: number;
+  weightKg?: number; // API uses weightKg
   valuePerWeight?: number;
   amount?: number;
   phase?: number;
   image?: string;
+  imageFilename?: string; // API uses imageFilename
   rarity?: Rarity;
   breaksInto?: Array<{
     name: string;
     amount: number;
     value: number;
   }>;
+  recyclesInto?: Record<string, number>; // API format: { "plastic_parts": 4 }
+  recipe?: Record<string, number>; // Crafting requirements: { "arc_alloy": 2, "plastic_parts": 4 }
+  craftBench?: string | string[]; // Where it can be crafted: ["workbench", "equipment_bench"] or "workbench"
 }
 
 export interface Component {
