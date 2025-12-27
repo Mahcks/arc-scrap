@@ -36,3 +36,5 @@ next-env.d.ts
 # bun
 bun.lockb
 app-temp/
+
+cheat_sheat.pdf

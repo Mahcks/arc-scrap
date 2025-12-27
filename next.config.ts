@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/arc-scrap',
+  basePath: process.env.NODE_ENV === 'production' ? '/arc-scrap' : '',
   images: {
     unoptimized: true,
   },

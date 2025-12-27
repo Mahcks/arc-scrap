@@ -3,24 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0e1a;
-  --foreground: #e5e7eb;
-  --card: #1a1f2e;
-  --card-hover: #252b3e;
-  --border: #2d3548;
+  --background: #0b0f19;
+  --surface: #141824;
+  --surface-hover: #1a1f2e;
+  --border: #1e2433;
+  --border-hover: #2a3144;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
   --accent: #3b82f6;
   --accent-hover: #2563eb;
-  --positive: #10b981;
-  --negative: #ef4444;
+  --success: #10b981;
+  --danger: #ef4444;
   --warning: #f59e0b;
+  --info: #06b6d4;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-primary);
   background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
@@ -29,26 +33,38 @@ body {
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent;
   }
 
   .card {
-    @apply bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 transition-colors;
+    @apply bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 transition-all duration-200;
   }
 
-  .card:hover {
-    @apply bg-[var(--card-hover)];
+  .card-hover {
+    @apply hover:bg-[var(--surface-hover)] hover:border-[var(--border-hover)] hover:shadow-lg hover:shadow-blue-500/5;
   }
 
-  .roi-positive {
-    @apply text-[var(--positive)];
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium;
   }
 
-  .roi-negative {
-    @apply text-[var(--negative)];
+  .badge-success {
+    @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20;
   }
 
-  .roi-neutral {
-    @apply text-gray-400;
+  .badge-danger {
+    @apply bg-red-500/10 text-red-400 border border-red-500/20;
+  }
+
+  .badge-warning {
+    @apply bg-amber-500/10 text-amber-400 border border-amber-500/20;
+  }
+
+  .badge-info {
+    @apply bg-cyan-500/10 text-cyan-400 border border-cyan-500/20;
+  }
+
+  .badge-neutral {
+    @apply bg-gray-500/10 text-gray-400 border border-gray-500/20;
   }
 }
